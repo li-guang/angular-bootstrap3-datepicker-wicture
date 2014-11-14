@@ -41,7 +41,7 @@ To use the directive, use the following code :
 
 `ng-model` : Variable of the controller scope to store the date. The date is currently store as a string, formatted according to date format.
 
-`date-format`: 逻辑见[ng-bs3-datepicker.js]文件
+`date-format`:  Format to use to format the date.（参阅moment.js。另：如果存在dd则有Date选择；如果有hh则有Time选择，此基础上有ss则会显示秒，否则显示小时与分钟）
 
 `language`: moment locale文件的区域名称，如"zh-cn"
 

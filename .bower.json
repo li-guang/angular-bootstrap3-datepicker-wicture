@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Angular Boostrap Datepicker based on nkunihiko's date picker",
   "main": [
-    "dist/ng-bs3-datepicker.js",
-    "dist/ng-bs3-datepicker.css"
+    "dist/ng-bs3-datepicker.js"
   ],
   "authors": [
     "LiGuang"
