@@ -43,6 +43,8 @@ To use the directive, use the following code :
 
 `date-format`: 逻辑见[ng-bs3-datepicker.js]文件
 
+`language`: moment locale文件的区域名称，如"zh-cn"
+
 # Thanks to
 
  * cletourneau: https://github.com/cletourneau
