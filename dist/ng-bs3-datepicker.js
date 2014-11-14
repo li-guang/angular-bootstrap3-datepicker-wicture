@@ -36,11 +36,14 @@ dp.directive('ngBs3Datepicker', function($compile) {
           input.attr('data-date-format', e.value);
         }
       });
-      $scope.$watch('dateFormat', function(value) {
+      $scope.$watch(attr.language, function(value) {
+        var language;
+        language = value ? value : input.attr('language');
         var pickTime = attr.dateFormat && attr.dateFormat.toLowerCase().indexOf('hh') > -1;
         var useSeconds = attr.dateFormat && attr.dateFormat.toLowerCase().indexOf('ss') > -1;
         var pickDate = !attr.dateFormat || attr.dateFormat.toLowerCase().indexOf('dd') > -1;
         return input.datetimepicker({
+          language: language,
           icons: {
             time: 'fa fa-clock-o',
             date: 'fa fa-calendar',
